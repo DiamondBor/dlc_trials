@@ -1,0 +1,60 @@
+{
+    // The ID of your mod. Should be unique!!
+    "id": "dlc_trials",
+    // Displays on the main menu.
+    "name": "The Trials",
+    // Displays underneath the name. Optional.
+    "subtitle": "Access the VOID through an abandoned shrine outside the Tower. What could there be beyond the confines of this realm?",
+
+    // The version of your mod.
+    "version": "v1.0.0",
+    // What version of the engine your mod was made with.
+    "engineVer": "v0.9.0-dev",
+
+    // The Deltarune chapter you'd like to base your mod off of.
+    // Do keep in mind that you can control chapter-specific features
+    // one by one using the config below.
+    "chapter": 2,
+
+    // The map that you start in when first starting the mod.
+    // May be overwritten by the Game:swapIntoMod invocation
+    "map": "the_void/void_1",
+
+
+    // Whether the mod is hidden from the mod selection.
+    "hidden": false,
+
+    // Whether the game window's title should be set to the mod's name, and the icon to the image
+    // in the file `window_icon.png`.
+    // When your mod is configured as the engine's target mod, it's automatically done unless if
+    // this option is explicitly set to false; else, it's done if this is set to true.
+    "setWindowTitleAndIcon": null,
+
+    // Config values for the engine and any libraries you may have.
+    // These config values can control chapter-specific features as well.
+    "config": {
+        "kristal": {
+            // End of config
+        }
+    },
+    // todo: agree on how this should work
+    "dlc": {
+        "extraBinCodes": {},
+        "worldMap": {
+            "x": 100,
+            "y": 200
+        },
+        "bosses": {
+            "bigdummy": {
+                "name": "Big Dummy",
+                "encounter": "bigdummy",
+                "preview": ["assets/sprites/enemies/bigdummy/idle_1.png", 40, -20]
+            },
+            "dummy": {
+                "name": "normal dummy lol",
+                "encounter": "dummy",
+                "preview": ["assets/sprites/enemies/dummy/idle.png", 67, 32]
+            }
+        }
+    }
+}
