@@ -3,7 +3,7 @@ function Mod:init()
     self:loadHooks()
 
     Mod.trapped = true
-
+    --hello
     PALETTE["tension_back"] = { 0.5, 0.5, 0.5, 1 }
     PALETTE["tension_decrease"] = { 198/255, 198/255, 198/255, 1 }
     PALETTE["tension_fill"] = { 198/255, 198/255, 198/255, 1 }
